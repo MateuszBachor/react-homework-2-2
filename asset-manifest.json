@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/goit-react-homework-2-2/static/js/main.69f9ae6c.js",
-    "index.html": "/goit-react-homework-2-2/index.html",
-    "main.69f9ae6c.js.map": "/goit-react-homework-2-2/static/js/main.69f9ae6c.js.map"
+    "main.js": "/react-homework-2-2/static/js/main.69f9ae6c.js",
+    "index.html": "/react-homework-2-2/index.html",
+    "main.69f9ae6c.js.map": "/react-homework-2-2/static/js/main.69f9ae6c.js.map"
   },
   "entrypoints": [
     "static/js/main.69f9ae6c.js"
