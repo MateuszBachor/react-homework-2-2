@@ -1,9 +1,9 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
-// import styles from './LoginForm.module.css';
 import AddContactForm from '../AddContactForm/AddContactForm';
 import FindContact from 'components/FindContact/FindContact';
 import ContactList from 'components/ContactList/ContactList';
+import styles from './LoginForm.module.css';
 
 export class LoginForm extends React.Component {
   state = {

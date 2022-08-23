@@ -1,25 +1,13 @@
 import React from 'react';
+import styles from './AddContactForm.module.css';
 
 export class AddContactForm extends React.Component {
-  //   handleSubmit = evt => {
-  //     evt.preventDefault();
-  //     const form = evt.currentTarget;
-  //     const contact = {
-  //       name: form.elements.contact.value,
-  //       number: form.elements.number.value,
-  //       id: nanoid(),
-  //     };
-  //     this.props.onSubmit({ contact });
-  //     this.setState({ contacts: [...this.state.contacts, contact] });
-  //     form.reset();
-  //   };
-
   render() {
     const { SubmitForm } = this.props;
     return (
       <div>
-        <form onSubmit={SubmitForm}>
-          <div>
+        <form className={styles.formContainer} onSubmit={SubmitForm}>
+          <div className={styles.formInput}>
             <label>Name</label>
             <input
               type="text"
@@ -29,7 +17,7 @@ export class AddContactForm extends React.Component {
               required
             />
           </div>
-          <div>
+          <div className={styles.formInput}>
             <label>Number</label>
             <input
               type="tel"
@@ -39,29 +27,15 @@ export class AddContactForm extends React.Component {
               required
             />
           </div>
-          <button type="submit">Add contact</button>
+          <button className={styles.formBtn} type="submit">
+            Add contact
+          </button>
         </form>
       </div>
     );
   }
 }
 export default AddContactForm;
-// import React from 'react';
-// import styles from './AddContactForm/AddContactForm.module.css';
-
-// export class AddContactForm extends React.Component {
-//   //   handleSubmit = evt => {
-//   //     evt.preventDefault();
-//   //     const form = evt.currentTarget;
-//   //     const contact = {
-//   //       name: form.elements.contact.value,
-//   //       number: form.elements.number.value,
-//   //       id: nanoid(),
-//   //     };
-//   //     this.props.onSubmit({ contact });
-//   //     this.setState({ contacts: [...this.state.contacts, contact] });
-//   //     form.reset();
-//   //   };
 
 //   render() {
 //     const { SubmitForm } = this.props;
